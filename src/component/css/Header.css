@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'lemon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_IceLemon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'changwon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  *{
+    background-color: #FCF6EC;
+  }
+  
+  header{
+    line-height: 40px;
+    position: relative;
+    top: 10px;
+    
+  }
+  
+  #upper{
+    text-align: center;
+    font-family: 'lemon';
+    font-size: 30px;
+    word-spacing: 1em;
+    position: relative;
+    left: 20px;
+    line-height: 20px;
+  }
+  
+  #under{
+    text-align: center;
+    font-family: 'changwon';
+    font-size: 45px;
+    
+  }
+  
+  #orange{
+    color: #F66B4C;
+  }
+  
+  hr{
+    position: relative;
+    border: solid 1.5px;
+    color: rgb(0, 0, 0, 0.5) ;
+  }
+  
+header{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+button{
+  border: none;
+}
+
+.logos{
+  position: relative;
+  left: 40%;
+}
