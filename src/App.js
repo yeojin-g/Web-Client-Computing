@@ -1,12 +1,17 @@
 import './App.css';
-import Logo from './component/header';
-import Login from './component/login';
+import SignUpPage from './component/pages/SignupPage';
+// import LoginPage from './component/pages/LoginPage'; 
+// import Router from ReactDOM;
 
 function App() {
   return(
+    // <Router>
+    //   <div>
+    //     <Route path="/login" component={Login} />
+    //   </div>
+    // </Router>
     <div>
-      <Logo></Logo>
-      <Login></Login>
+      <SignUpPage/>
     </div>
   );
 }

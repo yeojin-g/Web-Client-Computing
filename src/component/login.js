@@ -1,24 +1,23 @@
+import './css/Login.css'
+
 function Login() {
     return (
-        <div id="loginBlock">
-            <ul>
-                <li>
-                    <label id="id">ID</label>
-                    <input id="idInput" type="text"></input>
+        <div className="main">
+            <label id="title">로그인</label>
+            <div className="loginBoard">
+                <li className='idSet'>
+                    <input id="idInput" type="text" placeholder="ID"></input>
                 </li>
-
-                <li>
-                    <label id="pw">Password</label>
-                    <input id="pwInput" type="text"></input>
+                
+                <li className='pwSet'>
+                    <input id="pwInput" type="text" placeholder="PASSWORD"></input>
                 </li>
-            </ul>
-            <button onClick={checkInfo}></button>
+                <button className='google'>google</button>
+                <button className='Login'>Login</button>
+                <href>회원 가입</href>
+            </div>
         </div>
     )
-}
-
-function checkInfo(ID, PW) {
-
 }
 
 export default Login;

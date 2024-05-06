@@ -5,62 +5,74 @@
     font-style: normal;
   }
   
-  @font-face {
-    font-family: 'changwon';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  *{
-    background-color: #FCF6EC;
-  }
-  
-  header{
-    line-height: 40px;
-    position: relative;
-    top: 10px;
-    
-  }
-  
-  #upper{
-    text-align: center;
-    font-family: 'lemon';
-    font-size: 30px;
-    word-spacing: 1em;
-    position: relative;
-    left: 20px;
-    line-height: 20px;
-  }
-  
-  #under{
-    text-align: center;
-    font-family: 'changwon';
-    font-size: 45px;
-    
-  }
-  
-  #orange{
-    color: #F66B4C;
-  }
-  
-  hr{
-    position: relative;
-    border: solid 1.5px;
-    color: rgb(0, 0, 0, 0.5) ;
-  }
-  
+@font-face {
+  font-family: 'changwon';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  background-color: #FCF6EC;
+}
+
 header{
+  line-height: 40px;
+  position: relative;
+  top: 10px;
+  
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
 
-button{
-  border: none;
+#upper{
+  text-align: center;
+  font-family: 'lemon';
+  font-size: 30px;
+  word-spacing: 1em;
+  position: relative;
+  left: 20px;
+  line-height: 20px;
 }
 
-.logos{
-  position: relative;
-  left: 40%;
+#under{
+  text-align: center;
+  font-family: 'changwon';
+  font-size: 45px;
+  
 }
+
+#orange{
+  color: #F66B4C;
+}
+
+.checkImg{
+  position: relative;
+  left: 42.5%;
+  width: 45px;
+  height: 60px;
+  order: -1
+}
+
+hr{
+  position: relative;
+  border: solid 1.5px;
+  color: rgb(0, 0, 0, 0.5) ;
+  margin-top: 15px;
+}
+
+button{
+border: none;
+}
+
+.menuImg{
+  width: 30px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.title{
+  position: relative;
+  left: 42.5%;
+  }
