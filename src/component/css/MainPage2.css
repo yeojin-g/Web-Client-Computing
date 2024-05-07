@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.noneImg{
+    width: 25em;
+    
+    position: relative;
+    left: 39%;
+    top: 100px;
+}
+
+.choiceTodoS{
+    font-family: 'JalnanGothic';
+    font-size: 30px;
+    text-align: center;
+
+    color: #655D5D;
+    text-decoration-line: underline;
+}
+
+.mainPage2>p{
+    font-family: 'JalnanGothic';
+    font-size: 16px;
+    text-align: center;
+
+    color: #BCB1B1;
+}

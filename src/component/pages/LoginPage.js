@@ -2,11 +2,14 @@ import Login from "../Login";
 import Headers from "../Header";
 import React from "react";
 
-function LoginPage(){
+function LoginPage({idArr, pwArr}){
     return(
         <div>
             <Headers/>
-            <Login/>
+            <Login
+                idArr={idArr} 
+                pwArr={pwArr} 
+            />
         </div>
     );
 }

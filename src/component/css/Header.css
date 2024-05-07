@@ -12,11 +12,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
   background-color: #FCF6EC;
 }
 
-header{
+.Page-header>header{
   line-height: 40px;
   position: relative;
   top: 10px;
@@ -49,21 +56,21 @@ header{
 
 .checkImg{
   position: relative;
-  left: 42.5%;
+  left: 42%;
   width: 45px;
   height: 60px;
   order: -1
 }
 
-hr{
+.Page-header>hr{
   position: relative;
   border: solid 1.5px;
   color: rgb(0, 0, 0, 0.5) ;
   margin-top: 15px;
 }
 
-button{
-border: none;
+.Page-header button{
+  border-style: none;
 }
 
 .menuImg{
@@ -74,5 +81,20 @@ border: none;
 
 .title{
   position: relative;
-  left: 42.5%;
+  left: 42%;
   }
+
+
+.logoutB{
+  position: fixed;
+  left: 95%;
+  top: 29px;
+  
+  font-family: 'Pretendard-Bold';
+  font-size: 16px;
+  border-style: none;
+  color: #F66B4C;
+
+  
+}
+
