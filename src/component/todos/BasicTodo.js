@@ -1,65 +1,18 @@
 import '../css/BasicTodo.css'
+import TodoC from './TodoC';
 
 function BasicTodo() {
     return(
         <div className='basicTodo'>
             <div className='borders'>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
-                <li>
-                    <input className='checkB' type='checkbox'/>
-                    <input className='todoWrite' type='text'/>
-                </li>
+                <TodoC/>
+                <TodoC/>
+                <TodoC/>
+                <TodoC/>
+                <TodoC/>
+                <TodoC/>
+                <TodoC/>
+                <TodoC/>
             </div>
         </div>
     );

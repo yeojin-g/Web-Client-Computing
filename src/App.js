@@ -42,7 +42,7 @@ function App() {
         />}
         />
 
-        <Route path='/' element={<SelectPage/>}/>
+        <Route path='/' element={<BasicTodo/>}/>
         <Route path='/main2' element={<MainPage2/>}/>
         <Route path='/main3' element={<MainPage3/>}/>
         <Route path='/selectPage' element={<SelectPage/>}/>

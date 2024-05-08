@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .basicTodo li{
     list-style-type: none;
     display: flex;
@@ -16,11 +23,17 @@
     background-color: #D9D9D9;
 }
 
+.checkB:checked{
+    background-color: #F66B4C;
+    color: #9a9393;
+}
+
 .todoWrite{
+    font-family: 'Pretendard-Bold';
+    font-size: 18px;
+    text-align: left;
     width: 90%;
     border: none;
-    border-bottom: 2px solid;
-    border-color: #9a9393;
 }
 
 .borders{
