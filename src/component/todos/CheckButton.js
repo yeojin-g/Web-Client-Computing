@@ -1,7 +1,7 @@
 import { useState } from "react"
-import '../css/CheckButton.css'
+import '../todos_css/CheckButton.css'
 
-function CheckButton({checkButtonList, setCheckButtonList, date}) {
+function CheckButton({checkButtonList, setCheckButtonList, date, id}) {
     const [isChecked, setIsChecked] = useState(false)
     
     const change = () => {
@@ -15,8 +15,8 @@ function CheckButton({checkButtonList, setCheckButtonList, date}) {
 
     return(
         <div>
-            <input className='checkB' type='checkbox' onClick={change}/>
-            <label className='checkL'>{date}</label>
+            <input id={id} className='checkB' type='checkbox' onChange={change}/>
+            <label htmlFor={id} className='checkL'>{date}</label>
         </div>
     );
 }

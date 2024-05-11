@@ -73,3 +73,11 @@
     text-decoration: underline;
     margin-left: 5px;
 }
+
+.LoginFooter{
+    position: relative;
+    top: 692px;
+    height: 130px;
+    border: 2px solid #D9D9D9;
+    background-color: #D9D9D9;
+}

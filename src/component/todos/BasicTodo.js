@@ -1,4 +1,4 @@
-import '../css/BasicTodo.css'
+import '../todos_css/BasicTodo.css'
 import TodoItem from './TodoItem';
 import { useState  } from 'react';
 

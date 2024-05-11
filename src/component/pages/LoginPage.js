@@ -1,5 +1,5 @@
-import Login from "../Login";
-import Headers from "../Header";
+import Login from "../comp/Login";
+import Headers from "../comp/Header";
 import React from "react";
 
 function LoginPage({idArr, pwArr}){
@@ -10,6 +10,7 @@ function LoginPage({idArr, pwArr}){
                 idArr={idArr} 
                 pwArr={pwArr} 
             />
+            <footer className="LoginFooter"/>
         </div>
     );
 }

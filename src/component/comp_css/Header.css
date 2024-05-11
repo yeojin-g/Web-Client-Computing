@@ -33,6 +33,11 @@
   justify-content: flex-end;
 }
 
+.headerL{
+  text-decoration: none;
+  color: black;
+}
+
 #upper{
   text-align: center;
   font-family: 'lemon';
@@ -47,7 +52,7 @@
   text-align: center;
   font-family: 'changwon';
   font-size: 45px;
-  
+  cursor: pointer;
 }
 
 #orange{
@@ -85,7 +90,6 @@
 
 .Page-header .title{
   position: relative;
-  ;
   left: 600px;
   top: 2px;
   }
@@ -102,3 +106,14 @@
   color: #F66B4C;
 }
 
+.Login, .SignIn{
+  position: relative;
+  left: 90%;
+  top: -50px;
+  font-family: 'Pretendard-Bold';
+  font-size: 16px;
+  border-style: none;
+  color: #F66B4C;
+  margin-left: 30px;
+  text-decoration: none;
+}

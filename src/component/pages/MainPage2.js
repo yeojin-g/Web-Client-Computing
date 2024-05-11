@@ -1,8 +1,8 @@
 // 회원가입 후, 첫 페이지
-import Headers from "../Header";
-import LogoutB  from "../LogoutB";
+import Headers from "../comp/Header";
+import LogoutB  from "../comp/LogoutB";
 import noneImg from "../img/none.png";
-import '../css/MainPage2.css';
+import '../pages_css/MainPage2.css';
 import { Link } from "react-router-dom";
 
 function MainPage2(){
@@ -15,6 +15,7 @@ function MainPage2(){
             </Link>
             <p>위 문구를 클릭하면 유형 선택 화면으로 넘어갑니다.</p>
             <img className='noneImg' src={noneImg}/>
+            <footer/>
         </div>
     );   
 }

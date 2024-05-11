@@ -1,5 +1,5 @@
-import Headers from "../Header";
-import SignUp from "../Signup";
+import Headers from "../comp/Header";
+import SignUp from "../comp/Signup";
 
 function SignUpPage({ nameArr, setNameArr, idArr, setIdArr, pwArr, setPwArr, emailArr, setEmailArr }){
     return(
@@ -15,6 +15,7 @@ function SignUpPage({ nameArr, setNameArr, idArr, setIdArr, pwArr, setPwArr, ema
                 setPwArr={setPwArr}
                 setEmailArr={setEmailArr}
             />
+            <footer className="mainFooter"/>
         </div>
     )
 }

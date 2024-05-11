@@ -1,0 +1,28 @@
+.scheduleH{
+    font-family: 'hopang';
+    text-align: center;
+    font-size: 30px;
+}
+
+.scheduleT *{
+    font-family: 'hopang' !important;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+}
+
+.tableContainer{
+    width: 90%;
+}
+
+.headerT, .bodyT{
+    width: 50px;
+    font-size: 20px !important;
+    text-align: center !important;
+    padding: 0px;
+}
+
+.MuiTableCell-root{
+    padding: 0px;
+}

@@ -1,0 +1,50 @@
+.habbitCheckBoard{
+    padding-bottom: 30px;
+}
+
+.habbitCheckBoard > *{
+    background-color: #FFFDFA !important;
+}
+
+.habbitCheckBoard > .habbitHeader{
+    border-width: 0cm;
+
+    position: relative;
+    text-align: center;
+    left: 40%;
+    font-family: 'hopang';
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.habbitCheckBoard > .header:focus{
+    outline: none;
+}
+
+.habbitCheckBoard > li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+._1week >*{
+    margin: 5px;
+}
+
+._2week >*{
+    margin: 5px;
+}
+
+._3week >*{
+    margin: 5px;
+}
+
+._4week >*{
+    margin: 5px;
+}
+
+._5week >*{
+    margin: 5px;
+}

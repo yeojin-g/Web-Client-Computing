@@ -1,0 +1,22 @@
+.checkB{
+    display: none;
+
+}
+
+.checkL{
+    font-family: 'hopang';
+    border: 2px solid #D9D9D9;
+    border-radius: 100%;
+    width: 1.5em;
+    height: 1.5em;
+    color: black !important;
+    background-color: #D9D9D9 !important;
+
+    align-items: center;
+    cursor: pointer;
+}
+
+input:checked + label{
+    border: 2px solid #F66B4C !important;
+    background-color: #F66B4C !important;
+}
