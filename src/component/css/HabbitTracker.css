@@ -1,0 +1,54 @@
+.habbitBoard, .habbitBoard *{
+    background-color: #FFFDFA !important;
+}
+
+.habbitBoard{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr)
+    grid-
+    
+}
+
+/* .habbitHeader > .title{
+    font-family: 'hopang';
+    font-size: 30px;
+    color: #3D3B3B;
+
+    text-align: center;
+    padding-top: 20px;
+    border: 2px solid red;
+}
+
+.habbitBoard label{
+    font-family: 'hopang';
+    font-size: 20px;
+    color: #BCB1B1;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.habbitBoard button {
+    border-style: none;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.habbitBoard img{
+    width: 30px;
+}
+
+.habbitHeader > .habbitAddB{
+    position: relative;
+    left: 92%;
+    margin-top: -66px;
+}
+
+.habbitHeader > .habbitDelB{
+    position: relative;
+    left: 96%;
+    margin-top: -36px;
+    border: 3px solid black;
+} */

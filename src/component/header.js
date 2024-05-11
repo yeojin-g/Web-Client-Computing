@@ -1,11 +1,8 @@
 import './css/Header.css'
 import menuButton from './img/menu.png'
 import check from './img/check.png'
-import { useNavigate } from 'react-router-dom';
 
 function Headers() {
-  const navigate = useNavigate();
-
     return(
     <div className='Page-header'>
       <header>

@@ -1,0 +1,18 @@
+.checkB{
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #D9D9D9;
+    border-radius: 1rem;
+    background-color: #D9D9D9;
+}
+
+.checkL{
+    position: relative;
+
+}
+
+.checkB:checked{
+    background-color: #F66B4C;
+    color: #9a9393;
+}

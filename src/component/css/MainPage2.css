@@ -1,31 +1,33 @@
 @font-face {
-    font-family: 'JalnanGothic';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-family: 'hopang';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 .noneImg{
-    width: 25em;
+    width: 23em;
     
     position: relative;
-    left: 39%;
-    top: 100px;
+    left: 36%;
+    top: 30px;
 }
 
 .choiceTodoS{
-    font-family: 'JalnanGothic';
+    font-family: 'hopang';
     font-size: 30px;
     text-align: center;
+    margin-top: 10px;
 
     color: #655D5D;
     text-decoration-line: underline;
 }
 
 .mainPage2>p{
-    font-family: 'JalnanGothic';
+    font-family: 'hopang';
     font-size: 16px;
     text-align: center;
+    margin-top: -10px;
 
     color: #BCB1B1;
 }

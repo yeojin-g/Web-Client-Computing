@@ -3,7 +3,7 @@ import SignUp from "../Signup";
 
 function SignUpPage({ nameArr, setNameArr, idArr, setIdArr, pwArr, setPwArr, emailArr, setEmailArr }){
     return(
-        <div>
+        <div style={{backgroundColor: '#FCF6EC'}}>
             <Headers/>
             <SignUp
                 nameArr={nameArr} 

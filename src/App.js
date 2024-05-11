@@ -8,7 +8,7 @@ import SelectPage from './component/pages/SelectPage';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { useState } from 'react';
 
-import BasicTodo from './component/todos/BasicTodo';
+import HabbitTracker from './component/todos/HabbitTracker';
 
 function App() {
   const [nameArr, setNameArr] = useState([]);
@@ -42,11 +42,10 @@ function App() {
         />}
         />
 
-        <Route path='/' element={<BasicTodo/>}/>
+        <Route path='/' element={<HabbitTracker/>}/>
         <Route path='/main2' element={<MainPage2/>}/>
         <Route path='/main3' element={<MainPage3/>}/>
         <Route path='/selectPage' element={<SelectPage/>}/>
-
       </Routes>
     </BrowserRouter>
 

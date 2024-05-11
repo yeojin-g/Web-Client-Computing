@@ -4,7 +4,7 @@ import React from "react";
 
 function LoginPage({idArr, pwArr}){
     return(
-        <div>
+        <div style={{backgroundColor: '#FCF6EC'}}>
             <Headers/>
             <Login
                 idArr={idArr} 

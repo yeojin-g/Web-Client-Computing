@@ -33,7 +33,6 @@ function Login({idArr, pwArr}) {
                 <li className='pwSet'>
                     <input id="pwInput" type="text" placeholder="PASSWORD" value={pw} onChange={(e) => pwSet(e.target.value)}></input>
                 </li>
-                <button className='google'>google</button>
                 <button className='LoginB' onClick={checkExist}>Login</button>
                 <Link to={'../signUp'}>회원 가입</Link>
             </div>

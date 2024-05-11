@@ -56,10 +56,11 @@
 
 .checkImg{
   position: relative;
-  left: 42%;
+  left: 600px;
   width: 45px;
   height: 60px;
-  order: -1
+  order: -1;
+  background-color: #FCF6EC;
 }
 
 .Page-header>hr{
@@ -67,6 +68,8 @@
   border: solid 1.5px;
   color: rgb(0, 0, 0, 0.5) ;
   margin-top: 15px;
+  top: 5px;
+
 }
 
 .Page-header button{
@@ -77,24 +80,25 @@
   width: 30px;
   height: 20px;
   margin-left: 10px;
+  margin-top: 15px;
 }
 
-.title{
+.Page-header .title{
   position: relative;
-  left: 42%;
+  ;
+  left: 600px;
+  top: 2px;
   }
 
 
 .logoutB{
-  position: fixed;
-  left: 95%;
-  top: 29px;
+  position: relative;
+  left: 94.5%;
+  top: -50px;
   
   font-family: 'Pretendard-Bold';
   font-size: 16px;
   border-style: none;
   color: #F66B4C;
-
-  
 }
 

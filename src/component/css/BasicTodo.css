@@ -14,28 +14,6 @@
     top: 20px;
 }
 
-.checkB{
-    appearance: none;
-    width: 2rem;
-    height: 2rem;
-    border: 2px solid #D9D9D9;
-    border-radius: 1rem;
-    background-color: #D9D9D9;
-}
-
-.checkB:checked{
-    background-color: #F66B4C;
-    color: #9a9393;
-}
-
-.todoWrite{
-    font-family: 'Pretendard-Bold';
-    font-size: 18px;
-    text-align: left;
-    width: 90%;
-    border: none;
-}
-
 .borders{
     border: 2px solid black;
     border-bottom: 2px solid #9a9393;
