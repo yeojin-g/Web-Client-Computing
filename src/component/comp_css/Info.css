@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.InfoDiv * {
+    font-family: 'Pretendard-Bold';
+}
+
+.InfoDiv {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.InfoHeader {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-right: -20px;
+}
+
+.AccountCircleI{
+    transform: scale(3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: -20px;
+    color: #444242;
+}
+
+.Infoboard li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.pwBoard .icon1{
+    position: inherit;
+    top: 20px;
+    margin-left: -40px;
+    background-color: #D9D9D9;
+}
+
+.pwBoard .icon2{
+    position: inherit;
+    margin-top: 19px;
+    margin-left: -40px;
+    background-color: #D9D9D9;
+}
+
+.pwBoard .icon3{
+    position: inherit;
+    margin-top: 18px;
+    margin-left: -40px;
+    background-color: #D9D9D9;
+}
+
+.Infoboard{
+    margin-left: -20px;
+}
+
+.Infoboard input{
+    font-family: 'Pretendard-Bold';
+    background-color: #D9D9D9;
+    text-align: center;
+    font-size: 16px;
+    width: 480px;
+    height:  40px;
+    border-radius: 30px;
+    border-style: none;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.Infoboard label{
+    margin-top: 20px ;
+}
+
+.curPw{
+    display: flex;
+    position: relative;
+    margin-top: 120px;
+    margin-right: 20px;
+}
+
+.idInput{
+    margin-right: -10px;
+}
+
+.emailInp{
+    margin-right: 10px;
+}
+
+.checkPwInp{
+    margin-right: 25px;
+}
+
+.pwBoard {
+    display: grid;
+    place-items: center; /* 수직 및 수평 가운데 정렬 */
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 120%;
+    height: 100%;
+    margin-left: -80px;
+    margin-top: 30px;
+}
+
+.pwBoard > button {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 버튼 내 텍스트를 수직으로 가운데 정렬 */
+
+    margin-left: 45px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+
+    width: 88px;
+    height:  30px;
+
+    font-family: 'Pretendard-Bold';
+    color: white ;
+    background-color: #F66B4C;
+
+    border-radius: 30px;
+    border-style: none;
+    font-size: 16px;
+}
