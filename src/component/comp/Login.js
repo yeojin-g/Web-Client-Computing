@@ -7,12 +7,14 @@ import { VisibilityOutlined } from "@material-ui/icons";
 function Login({idArr, pwArr, setCurrentUser}) {
     const [id, idSet] = useState('')
     const [pw, pwSet] = useState('')
+    const [clickEyes, setClickEyes] = useState(false);
     const [success, setSuccess] = useState(false)
     const navigate = useNavigate();
+    
 
     useEffect(() => {
         if (success) {
-            navigate('/main2');
+            navigate('/main3');
         }
     }, [success, navigate]);
 
@@ -25,6 +27,10 @@ function Login({idArr, pwArr, setCurrentUser}) {
         }
     }
 
+    const clickHandler=()=>{
+        clickEyes?setClickEyes(false):setClickEyes(true);
+    }
+
     return (
         <div className="mainL">
             <label id="titleL">로그인</label>
@@ -34,7 +40,8 @@ function Login({idArr, pwArr, setCurrentUser}) {
                 </li>
                 
                 <li className='pwSet'>
-                    <input id="pwInput" type="text" placeholder="PASSWORD" value={pw} onChange={(e) => pwSet(e.target.value)}></input>
+                    <input id="pwInput" type={clickEyes?"text":"password"} placeholder="PASSWORD" value={pw} onChange={(e) => pwSet(e.target.value)}></input>
+                    {clickEyes?<VisibilityOutlined className="icon" onClick={clickHandler}/>:<VisibilityOffOutlined className="icon"onClick={clickHandler}/>}
                 </li>
                 <button className='LoginB' onClick={checkExist}>Login</button>
                 <Link to={'../signUp'}>회원 가입</Link>

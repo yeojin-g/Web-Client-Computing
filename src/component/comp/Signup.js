@@ -1,6 +1,8 @@
 import '../comp_css/Signup.css'
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { VisibilityOffOutlined} from "@material-ui/icons";
+import { VisibilityOutlined} from "@material-ui/icons";
 
 function SignUp({ nameArr, setNameArr, idArr, setIdArr, pwArr, setPwArr, emailArr, setEmailArr }) {
     const [name, nameSet] = useState('')
@@ -10,6 +12,8 @@ function SignUp({ nameArr, setNameArr, idArr, setIdArr, pwArr, setPwArr, emailAr
     const [email, emailSet] = useState('')
     const [buttonClicked, setButtonClicked] = useState(false);
     const [success, setSuccess] = useState(false);
+    const [clickEyes1, setClickEyes1] = useState(false);
+    const [clickEyes2, setClickEyes2] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -54,6 +58,14 @@ function SignUp({ nameArr, setNameArr, idArr, setIdArr, pwArr, setPwArr, emailAr
         
     }
 
+    const clickHandler1=()=>{
+        clickEyes1?setClickEyes1(false):setClickEyes1(true);
+    }
+
+    const clickHandler2=()=>{
+        clickEyes2?setClickEyes2(false):setClickEyes2(true);
+    }
+
     return(
         <div className='SignUpBoard'>
             <li>
@@ -73,12 +85,14 @@ function SignUp({ nameArr, setNameArr, idArr, setIdArr, pwArr, setPwArr, emailAr
 
                 <li className='inputWrapper3'>
                     <label id="pw">비밀번호</label>
-                    <input id="pwInput" type="text" value={pw} onChange={(e) => pwSet(e.target.value)}></input>
+                    <input id="pwInput" type={clickEyes1?"text":"password"} value={pw} onChange={(e) => pwSet(e.target.value)}></input>
+                    {clickEyes1?<VisibilityOutlined className="icon1" onClick={clickHandler1}/>:<VisibilityOffOutlined className="icon1" onClick={clickHandler1}/>}
                 </li>
 
                 <li className='inputWrapper4'>
                     <label id="checkPw">비밀번호 확인</label>
-                    <input id="checkPwInput" type="text" value={pwCheck} onChange={(e) => pwCheckSet(e.target.value)}></input>
+                    <input id="checkPwInput" type={clickEyes2?"text":"password"} value={pwCheck} onChange={(e) => pwCheckSet(e.target.value)}></input>
+                    {clickEyes2?<VisibilityOutlined className="icon2" onClick={clickHandler2}/>:<VisibilityOffOutlined className="icon2" onClick={clickHandler2}/>}
                 </li>
 
                 <li className='inputWrapper5'>

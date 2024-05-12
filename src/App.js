@@ -1,4 +1,5 @@
 import './App.css';
+import '../src/component/font.css';
 import SignUpPage from './component/pages/SignupPage';
 import LoginPage from './component/pages/LoginPage'; 
 import MainPage1 from './component/pages/MainPage1';
