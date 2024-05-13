@@ -21,3 +21,10 @@
     border-bottom: 2px solid #9a9393;
 }
 
+.basicTodo{
+    position:absolute;
+    left: 470px;
+    top: 16%;
+    width: 500px;
+}
+

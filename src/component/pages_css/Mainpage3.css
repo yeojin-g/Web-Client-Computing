@@ -1,12 +1,9 @@
 .Main3{
     position: relative;
+    left: 30%;
 }
 
 .Main3Icon1{
     position: relative;
     right: 10%;
-}
-
-CalenderTodo{
-    position: relative;
 }

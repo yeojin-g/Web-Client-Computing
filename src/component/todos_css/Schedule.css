@@ -2,6 +2,7 @@
     font-family: 'hopang';
     text-align: center;
     font-size: 30px;
+    margin-left: -45px;
 }
 
 .scheduleT *{
@@ -18,11 +19,16 @@
 
 .headerT, .bodyT{
     width: 50px;
-    font-size: 20px !important;
     text-align: center !important;
     padding: 0px;
 }
 
 .MuiTableCell-root{
-    padding: 0px;
+    padding: 0px !important;
+}
+
+.schedule{
+    margin-left: 20px;
+    position: relative;
+    width: 33%;
 }
