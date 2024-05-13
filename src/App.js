@@ -31,7 +31,7 @@ function App() {
 
         <Route 
         path='/signUp' 
-        element={<SignUpPage 
+         element={<SignUpPage 
           nameArr={nameArr} 
           idArr={idArr} 
           pwArr={pwArr} 

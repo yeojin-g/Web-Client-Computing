@@ -75,9 +75,9 @@
 
 
 .logoutB{
-  position: fixed;
-  left: 94.5%;
-  top: 4%;
+  position: relative;
+  right: -93.5%;
+  top: -55px;
   
   font-family: 'Pretendard-Bold';
   font-size: 16px;
@@ -87,7 +87,7 @@
 
 .Login, .SignIn{
   position: relative;
-  left: 90%;
+  left: 88%;
   top: -50px;
   font-family: 'Pretendard-Bold';
   font-size: 16px;
