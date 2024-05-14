@@ -18,13 +18,15 @@
 
 .borders{
     border: 2px solid black;
-    border-bottom: 2px solid #9a9393;
+    overflow: auto;
+    height: 1028px;
+
 }
 
 .basicTodo{
     position:absolute;
-    left: 470px;
-    top: 16%;
+    left: 480px;
+    top: 17%;
     width: 500px;
 }
 

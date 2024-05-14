@@ -33,7 +33,7 @@ function TodoItem({itemL, setItemList, len}) {
         <div>
             <li style={{borderBottom: '1.5px solid black', borderLeft:'0%'}}>
                 <input className='checkB' type='checkbox' onClick={change}/>
-                <input className='todoWrite' style={{color: !isChecked ? 'black' : 'gray'}} onChange={(e) => writeItem(e.target.value)}/>
+                <input className='todoWrite' style={{color: !isChecked ? 'black' : 'gray', textDecorationLine: !isChecked ? '' : 'line-through'}} onChange={(e) => writeItem(e.target.value)}/>
                 {changeNow?
                 <button className="done" onClick={saveItem}>✔</button>:null}
             </li>

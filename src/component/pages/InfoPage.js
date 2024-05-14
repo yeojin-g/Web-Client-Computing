@@ -5,7 +5,7 @@ import LogoutB  from "../comp/LogoutB"
 function InfoPage({nameArr, idArr, pwArr, emailArr, setPwArr, currentUser}){
     return(
         <div>
-            <Headers/>
+            <Headers isLogin={true}/>
             <LogoutB/>
             <Info
             nameArr={nameArr}

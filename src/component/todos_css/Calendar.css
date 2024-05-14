@@ -9,16 +9,16 @@
 .react-calendar {
     position: absolute;
     left: -47px;
-    top: 70%;
-    width: 400px;
-    height: 350px;
+    top: 110%;
+    width: 445px;
+    height: 370px;
     max-width: 100%;
     background: white;
     border: 2px solid #101209;
     line-height: 1.125em;
     margin-top: 2%;
     padding-bottom: 10px;
-    margin-left: 5%;
+    margin-left: 4.4%;
   }
   
   .react-calendar--doubleView {
@@ -203,7 +203,7 @@
   }
 
   .react-calendar__month-view{
-    height: 287.5px !important;
+    height: 307px !important;
   }
 
   .react-calendar__month-view__days > button{

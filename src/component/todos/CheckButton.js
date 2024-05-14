@@ -15,7 +15,7 @@ function CheckButton({checkButtonList, setCheckButtonList, date, id}) {
 
     return(
         <div>
-            <input id={id} className='checkB' type='checkbox' onChange={change}/>
+            <input id={id} className='checkBut' type='checkbox' onChange={change}/>
             <label htmlFor={id} className='checkL'>{date}</label>
         </div>
     );

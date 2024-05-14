@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { VisibilityOffOutlined } from "@material-ui/icons";
 import { VisibilityOutlined } from "@material-ui/icons";
+import axios from 'axios';
 
 function Login({idArr, pwArr, setCurrentUser}) {
     const [id, idSet] = useState('')
@@ -18,14 +19,18 @@ function Login({idArr, pwArr, setCurrentUser}) {
         }
     }, [success, navigate]);
 
-    const checkExist = () => {
-        if(!idArr.includes(id) || (pw !== pwArr[idArr.indexOf(id)])){
+    const checkExist = async(e) => {
+        e.preventDefault();
+        const result = await axios.get(`/api/where?id=${id}`);
+
+        if(result.length() === 0 || result[0].Pw === pw){
             alert("아이디 및 비밀번호가 잘못되었습니다.\n다시 시도해주세요.")
         }else{
             setSuccess(true)
             setCurrentUser([id, pw, idArr.indexOf(id)])
         }
     }
+    
 
     const clickHandler=()=>{
         clickEyes?setClickEyes(false):setClickEyes(true);

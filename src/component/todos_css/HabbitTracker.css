@@ -4,14 +4,17 @@
 
 .habbitBoard{
     position: relative;
-    width: 500px;
-    left: 70%;
-    
+    width: 470px;
+    left: 67%;
+    top: -641px;
+    height: 1028px;
+    overflow: auto;
+    border: 2px solid black;
 }
 
 .habbitHeader > .title{
     font-family: 'hopang';
-    font-size: 30px;
+    font-size: 20px;
     color: #3D3B3B;
 
     text-align: center;
@@ -37,19 +40,19 @@
 }
 
 .habbitBoard img{
-    width: 30px;
+    width: 27px;
 }
 
 .habbitHeader > .habbitAddB{
     position: relative;
-    left: 92%;
-    margin-top: -75px;
+    left: 82%;
+    margin-top: -70px;
 }
 
 .habbitHeader > .habbitDelB{
     position: relative;
-    left: 96%;
-    margin-top: -32px;
+    left: 90.5%;
+    margin-top: -29px;
 }
 
 .habbitButtons{
