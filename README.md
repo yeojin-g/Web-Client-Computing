@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS habbittracker (
 npm start
 ```
 
-8. 웹 브라우저에서 **`http://localhost:8000`**으로 접속하여 프로젝트를 확인합니다.
+8. 웹 브라우저에서 **`http://localhost:8001`**으로 접속하여 프로젝트를 확인합니다.
 
 ## **사용법**
 
