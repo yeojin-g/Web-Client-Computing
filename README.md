@@ -29,7 +29,7 @@ git clone https://github.com/yeojin-g/Web-Client-Computing.git
 2. 프로젝트 폴더로 이동합니다.
 
 ```bash
-cd yourproject
+cd Web-Client-Computing
 ```
 
 3. 프로젝트 의존성을 설치합니다. **`legacy-peer-deps`** 플래그를 사용하여 설치합니다.
