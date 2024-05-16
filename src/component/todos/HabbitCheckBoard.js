@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import CheckButton from "./CheckButton";
 import '../todos_css/HabbitCheckBoard.css';
-import del from '../img/del.png'
 import axios from "axios";
 
 function HabbitCheckBoard({num, checkButtonList, setCheckButtonList, currentUser, setcurNum}) {
@@ -17,8 +16,7 @@ function HabbitCheckBoard({num, checkButtonList, setCheckButtonList, currentUser
     
     return (
         <div className="habbitCheckBoard">
-            <input className='habbitHeader' type="text" defaultValue={`Habbit ${num}`} onBlur={(e) => changeName(e)} />
-            <img src={del} className="habbitDelImg" />  
+            <input className='habbitHeader' type="text" defaultValue={`Habbit ${num}`} onBlur={(e) => changeName(e)} /> 
 
         <li className="_1week">
             <CheckButton checkButtonList={checkButtonList} setCheckButtonList={setCheckButtonList} setcurNum={setcurNum} num={num} date ={1} id ={'b1'+ String(num)}/>

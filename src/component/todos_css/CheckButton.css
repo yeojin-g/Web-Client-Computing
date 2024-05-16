@@ -5,12 +5,13 @@
 
 .checkL{
     font-family: 'hopang';
-    border: 2px solid #D9D9D9;
+    border: 2px solid #D9D9D9 !important;
     border-radius: 100%;
     width: 1.5em;
     height: 1.5em;
     color: black !important;
     background-color: #D9D9D9 !important;
+    z-index: 9999999;
 
     align-items: center;
     cursor: pointer;
