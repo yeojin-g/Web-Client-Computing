@@ -2,15 +2,16 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const mysql = require("mysql2");
+require('dotenv').config();
 
 app.use(express.static(path.join(__dirname, '/build')));
 app.use(express.json()); 
 
 const db = mysql.createPool({
-    host: "127.0.0.1",
-    user: "root",
-    password: "jini0599",
-    database: "todo"
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME
 });
 
 // 사용자 정보 table에 저장하기 
