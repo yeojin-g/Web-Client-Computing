@@ -211,6 +211,6 @@ app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, 'build/index.html'));
 });
 
-app.listen(8000, function () {
-    console.log('Server is running on port 8000');
+app.listen(8001, function () {
+    console.log('Server is running on port 8001');
 });
