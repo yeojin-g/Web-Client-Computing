@@ -2,6 +2,10 @@
     list-style-type: none;
 }
 
+* button{
+    cursor: pointer;
+}
+
 #titleL{
     font-size: 24px;
     position: relative;

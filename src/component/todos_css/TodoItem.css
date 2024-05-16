@@ -4,20 +4,21 @@
     text-align: left;
     width: 90%;
     border: none;
-}
+    background-color: #FFFDFA !important;
+    }
 
 .checkB{
     appearance: none;
     width: 2em;
     height: 2em;
     border-radius: 100%;
-    border: 1px solid #d9d9d9;
-    background-color: #d9d9d9;
+    border: 1px solid #d9d9d9 !important;
+    background-color: #d9d9d9 !important;
 }
 
 .checkB:checked{
-    border: 1px solid #F66B4C;
-    background-color: #F66B4C;
+    border: 1px solid #F66B4C !important;
+    background-color: #F66B4C !important;
 }
 
 .done{

@@ -9,7 +9,8 @@
     top: -641px;
     height: 1028px;
     overflow: auto;
-    border: 2px solid black;
+    border: none;
+    box-shadow: 3px 5px 5px 0px #b1afaf;
 }
 
 .habbitHeader > .title{

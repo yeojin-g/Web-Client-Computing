@@ -9,21 +9,14 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { useState } from 'react';
 
 function App() {
-  const [nameArr, setNameArr] = useState([]);
-  const [idArr, setIdArr] = useState([]);
-  const [pwArr, setPwArr] = useState([]);
-  const [emailArr, setEmailArr] = useState([]);
   const [currentUser, setCurrentUser] = useState([]);
 
   return(
     <BrowserRouter>
       <Routes>
-
         <Route 
         path='/login' 
         element={<LoginPage 
-          idArr={idArr} 
-          pwArr={pwArr} 
           currentUser={currentUser}
           setCurrentUser={setCurrentUser}
           />}
@@ -32,26 +25,13 @@ function App() {
         <Route 
         path='/signUp' 
          element={<SignUpPage 
-          nameArr={nameArr} 
-          idArr={idArr} 
-          pwArr={pwArr} 
-          emailArr={emailArr}
-          setNameArr={setNameArr}
-          setIdArr={setIdArr}
-          setPwArr={setPwArr}
-          setEmailArr={setEmailArr}
         />}
         />
 
         <Route path='/' element={<MainPage1/>}/>
         <Route path='/main1' element={<MainPage1/>}/>
-        <Route path='/main3' element={<MainPage3/>}/>
+        <Route path='/main3' element={<MainPage3 currentUser={currentUser}/>}/>
         <Route path='/info' element={<InfoPage
-        nameArr={nameArr}
-        idArr={idArr}
-        pwArr={pwArr}
-        emailArr={emailArr}
-        setPwArr={setPwArr}
         currentUser={currentUser}
         />}/>
       </Routes>

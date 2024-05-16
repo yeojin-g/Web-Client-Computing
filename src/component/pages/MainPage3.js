@@ -5,27 +5,26 @@ import BasicTodo from "../todos/BasicTodo";
 import CalendarTodo from "../todos/Calendar";
 import Schedule from "../todos/Schedule";
 import HabbitTracker from "../todos/HabbitTracker";
-import {AccountCircle} from "@material-ui/icons";
+import { AccountCircle } from "@material-ui/icons";
 
+function MainPage3({ currentUser }) {
 
-function MainPage3(){
-    return(
+    return (
         <div className="Main3">
-            <Headers isLogin={true}/>
-            <Link to='../info'className="Main3Icon1">
-                <AccountCircle className="Main3Icon2"/>  
+            <Headers isLogin={true} />
+            <Link to='../info' className="Main3Icon1">
+                <AccountCircle className="Main3Icon2" />
             </Link>
-            <LogoutB/>
-                <div className="firstLine">
-                    <Schedule/>
-                    <CalendarTodo/>
-                </div>
-                <BasicTodo/>
-                <HabbitTracker/>
-
-            <footer className="main3Footer"/>
+            <LogoutB />
+            <div className="firstLine">
+                <Schedule />
+                <CalendarTodo />
+            </div>
+            <BasicTodo currentUser={currentUser}/>
+            <HabbitTracker currentUser={currentUser}/>
+            <footer className="main3Footer" />
         </div>
-    );   
+    );
 }
 
 export default MainPage3;

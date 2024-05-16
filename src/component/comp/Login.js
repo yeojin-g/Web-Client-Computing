@@ -5,7 +5,7 @@ import { VisibilityOffOutlined } from "@material-ui/icons";
 import { VisibilityOutlined } from "@material-ui/icons";
 import axios from 'axios';
 
-function Login({idArr, pwArr, setCurrentUser}) {
+function Login({setCurrentUser}) {
     const [id, idSet] = useState('')
     const [pw, pwSet] = useState('')
     const [clickEyes, setClickEyes] = useState(false);
@@ -18,18 +18,23 @@ function Login({idArr, pwArr, setCurrentUser}) {
             navigate('/main3');
         }
     }, [success, navigate]);
-
-    const checkExist = async(e) => {
+    const checkExist = async (e) => {
         e.preventDefault();
-        const result = await axios.get(`/api/where?id=${id}`);
-
-        if(result.length() === 0 || result[0].Pw === pw){
-            alert("아이디 및 비밀번호가 잘못되었습니다.\n다시 시도해주세요.")
-        }else{
-            setSuccess(true)
-            setCurrentUser([id, pw, idArr.indexOf(id)])
+        const result = await axios.get(`/api/where/${id}`);
+    
+        if (result.data.length === 0) {
+            alert("아이디가 존재하지 않습니다.");
+        } else {
+            const user = result.data[0];
+            if (user.Pw === pw) {
+                setSuccess(true);
+                setCurrentUser([id, pw]);
+            } else {
+                alert("비밀번호가 잘못되었습니다. 다시 시도해주세요.");
+            }
         }
-    }
+    };
+    
     
 
     const clickHandler=()=>{

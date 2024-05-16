@@ -6,6 +6,12 @@
     background-color: #FFFDFA !important;
 }
 
+.habbitCheckBoard > .habbitDelImg{
+    width: 20px;
+    position: relative;
+    left: 6%;
+}
+
 .habbitCheckBoard > .habbitHeader{
     border-width: 0cm;
 
