@@ -2,7 +2,7 @@
 
 ---
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/5a1a4cd6-fb59-4738-807e-dfda4071543d/842dbd1a-75e9-48a1-9a0c-62c54e2169f6/image.png)
+![image.png](image.png)
 
 ## 1. 프로젝트 소개
 
@@ -16,7 +16,7 @@
 - Front: Html, React
 - Back: Node.js(Express)
 - DB: Mysql
-- Design: [Figma](https://www.figma.com/file/IdRGhcelyqBPXyYINirMMX/%C3%AB%C2%84%C2%88To%C3%AB%C2%82%C2%98Do-%C3%AA%C2%B5%C2%AC%C3%AD%C2%98%C2%84-%C3%AD%C2%99%C2%94%C3%AB%C2%A9%C2%B4?type=design&node-id=0:1&mode=design&t=zAK8wZ91iPpiH4F6-1) (링크 달기)
+- Design: [Figma](https://www.figma.com/file/IdRGhcelyqBPXyYINirMMX/%C3%AB%C2%84%C2%88To%C3%AB%C2%82%C2%98Do-%C3%AA%C2%B5%C2%AC%C3%AD%C2%98%C2%84-%C3%AD%C2%99%C2%94%C3%AB%C2%A9%C2%B4?type=design&node-id=0:1&mode=design&t=zAK8wZ91iPpiH4F6-1)
 
 # 3. 설치 방법
 
@@ -26,23 +26,23 @@
 git clone <https://github.com/yeojin-g/Web-Client-Computing .git>
 ```
 
-1. 프로젝트 폴더로 이동합니다.
+2. 프로젝트 폴더로 이동합니다.
 
 ```bash
 cd yourproject
 ```
 
-1. 프로젝트 의존성을 설치합니다. **`legacy-peer-deps`** 플래그를 사용하여 설치합니다.
+3. 프로젝트 의존성을 설치합니다. **`legacy-peer-deps`** 플래그를 사용하여 설치합니다.
 
 ```bash
 npm install --legacy-peer-deps
 ```
 
-1. MySQL 데이터베이스를 설정합니다.
+4. MySQL 데이터베이스를 설정합니다.
     - MySQL을 설치하고 실행합니다.
     - 데이터베이스를 생성하고, 사용자와 권한을 설정합니다.
 
-1. **`.env`** 파일을 생성하고, 아래의 형식에 맞게 데이터베이스 연결 정보를 설정합니다.
+5. **`.env`** 파일을 생성하고, 아래의 형식에 맞게 데이터베이스 연결 정보를 설정합니다.
 
 ```makefile
 DB_HOST=localhost
@@ -51,7 +51,7 @@ DB_PASS=mypassword
 DB_NAME=mydatabase
 ```
 
-1. 데이터베이스에 테이블을 생성합니다. 아래의 스키마 생성 코드를 실행하거나, SQL 파일을 데이터베이스에 import합니다.
+6. 데이터베이스에 테이블을 생성합니다. 아래의 스키마 생성 코드를 실행하거나, SQL 파일을 데이터베이스에 import합니다.
 
 ```sql
 sqlCopy code
@@ -82,13 +82,13 @@ CREATE TABLE IF NOT EXISTS habbittracker (
 );
 ```
 
-1. 서버를 실행합니다.
+7. 서버를 실행합니다.
 
 ```bash
 npm start
 ```
 
-1. 웹 브라우저에서 **`http://localhost:8000`**으로 접속하여 프로젝트를 확인합니다.
+8. 웹 브라우저에서 **`http://localhost:8000`**으로 접속하여 프로젝트를 확인합니다.
 
 ## **사용법**
 
