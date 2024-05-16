@@ -1,16 +1,64 @@
 import '../todos_css/HabbitTracker.css'
 import plus from '../img/plus.png'
 import del from '../img/del.png'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import HabbitCheckBoard from './HabbitCheckBoard';
+import axios from 'axios';
 
-function HabbitTracker() {
+function HabbitTracker({currentUser}) {
     const [num, setNum] = useState(0);
     const [habbits, setHabbits] = useState([]);
-    const addH = () => {
-        const newH = <HabbitCheckBoard num={num}/>;
-        setHabbits([...habbits, newH]);
-        setNum(num+1);
+    const [checkButtonList, setCheckButtonList] = useState([]);
+    const [curNum, setcurNum] = useState(0);
+    const [habbitDB, setHabbitDB] = useState([]);
+
+    useEffect(() => {
+       const loadHabbitDB = async()=>{
+            try{
+                const response = await axios.get(`/api/getHabbitTracker/${currentUser[0]}`);
+                setHabbitDB(response.data);
+                console.log(`request.data: ${response.data}`);
+                console.log(`habbitDB: ${habbitDB}`);
+            } catch (error) {
+                console.error('정보 불러오는 중 error:', error);
+            }
+        }
+        loadHabbitDB();
+        }, []);
+
+    useEffect(()=>{
+        const updateCheckButtonL = async () => {
+            try {
+                await axios.post('/api/updateHabbitCheckButtonL', {
+                    idx: curNum,
+                    ID: currentUser[0],
+                    checkButtonL: checkButtonList.length === 0?null:JSON.stringify(checkButtonList)
+                });
+                console.log(checkButtonList);
+                console.log(`update ${curNum}, ${currentUser[0]}, ${checkButtonList}`)
+                console.log('checkButtonL 변경 요청이 서버에 전달되었습니다.');
+            } catch (error) {
+                console.error('checkButtonL 변경 요청 중 에러가 발생했습니다:', error);
+            }
+        };
+        updateCheckButtonL();
+    },[checkButtonList])
+
+    const addH = async() => {
+        try {
+            const prevNum = num;
+            setNum(prevNum + 1);
+            const newH = <HabbitCheckBoard num={prevNum} checkButtonList={checkButtonList} setCheckButtonList={setCheckButtonList} currentUser={currentUser} setcurNum={setcurNum}/>;
+            setHabbits([...habbits, newH]);
+            await axios.post('/api/insertHabbit', {
+                idx: prevNum,
+                ID: currentUser[0], 
+                habbitName: `Habbit${prevNum}`, 
+                checkButtonL: checkButtonList.length === 0?null:JSON.stringify(checkButtonList)
+            });
+        } catch (error) {
+            console.error('Add habit error:', error);
+        }
     }
 
     const delH = () => {
