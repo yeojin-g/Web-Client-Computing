@@ -42,13 +42,16 @@ npm install --legacy-peer-deps
     - MySQL을 설치하고 실행합니다.
     - 데이터베이스를 생성하고, 사용자와 권한을 설정합니다.
 
-5. **`.env`** 파일을 생성하고, 아래의 형식에 맞게 데이터베이스 연결 정보를 설정합니다.
-
-```makefile
-DB_HOST=localhost
-DB_USER=myusername
-DB_PASS=mypassword
-DB_NAME=mydatabase
+5. server.js파일에서 데이터베이스 연결 정보를 수정합니다.
+   
+```json
+// 사용자 정보로 수정
+const db = mysql.createPool({
+    host: "127.0.0.1",
+    user: "root",
+    password: "jini0599",
+    database: "todo"
+});
 ```
 
 6. 데이터베이스에 테이블을 생성합니다. 아래의 스키마 생성 코드를 실행하거나, SQL 파일을 데이터베이스에 import합니다.
